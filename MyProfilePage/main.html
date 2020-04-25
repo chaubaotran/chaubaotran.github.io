@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My profile page</title>
+        <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #homePage{
+            background-image: url("images/Picture1.png");
+            background-repeat: none;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            width: 100%;
+            height: 500px;          
+        }
+        #topBar{
+            float: right;
+            margin-top: 10px;
+            list-style-type: none;
+            overflow: hidden;
+        }
+        .menu{
+            float: left;
+            color: white;
+            margin-right: 30px;
+        }
+        a:link, a:visited{
+            color:  rgb(131, 184, 228);
+            text-decoration: none;
+            font-size: 1.5vw;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #hiText{
+            clear: both;
+            color:#82b7e3;
+            font-weight: bold;
+            font-family: Bradley Hand ITC;
+            font-size: 5vw;
+            text-align: center;
+            padding-top: 150px;
+        }
+        #aboutPage{
+            margin: 0;
+        }
+        #cloudImage{
+            width: 20%;
+            position: relative;
+            left: 40%;
+            margin-bottom: 15px;
+        }
+        #introduction{
+            width: 40%;
+            font-size: 2vw;
+            font-family: Bradley Hand ITC;
+            font-weight: bold;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #vietnamSection{
+            margin: 0;
+            width: 100%;
+        }
+        #leftSection{
+            margin-top: 100px;
+            float: left;
+            width: 50%;
+            font-size: 1.5vw;
+            font-family: Bradley Hand ITC;
+            font-weight: bold;
+            text-align: center;
+        }
+        #vietnamImage{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        #rightSection{
+            margin-top: 100px;
+            float: left;
+            width: 50%;
+        }
+        #work{
+            clear: both;
+            margin: 0;
+        }
+        #question{
+            font-size: 3vw;
+            font-family: Bradley Hand ITC;
+            font-weight: bold;
+            text-align: center;
+            color:  rgb(131, 184, 228);
+            margin-top: 500px;
+        }
+        .frame{
+            float: left;
+            width: 50%;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 2vw;
+            font-family: Bradley Hand ITC;
+        }
+        @media screen and (max-width:900px) {
+        #leftSection, #rightSection, .frame {
+            width:100%;}
+        }
+        #contact{
+            clear: both;
+            margin: 0;
+            text-align: center;
+            font-size: 1.5vw;
+            font-family: Bradley Hand ITC;
+        }
+        #text2{            
+            padding-top: 100px;
+            font-size: 3vw;
+            font-family: Bradley Hand ITC;
+            font-weight: bold;
+            color:  rgb(131, 184, 228);           
+        }      
+        </style>
+    </head>
+
+    <body>
+        <div id="homePage">
+            <ul id="topBar">
+                <li class="menu"><a href="#homePage">Home</a></li>
+                <li class="menu"><a href="#aboutPage">About</a></li>
+                <li class="menu"><a href="#work">Work</a></li>
+                <li class="menu"><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 id="hiText">Hi, I'm Chau</h1>
+        </div>
+        <div id="aboutPage">
+            <img id="cloudImage" src="images/Picture2.jpg" alt="cloud">
+            <div id="introduction">
+                I am a final year student of Foreign Trade University based in Ho Chi Minh city.
+                <br> I love travel, food and movies.               
+            </div>
+        </div>
+
+        <div id="vietnamSection">
+            <div id="leftSection">
+                <div>
+                    This is my country
+                </div>
+                <img id="vietnamImage" src="images/Picture3.jpg" alt="Vietnam">
+            </div>
+            <div id="rightSection">
+                <iframe width="450" height="300" src="https://www.youtube.com/embed/gORgNvwS2uI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="work">
+            <h1 id="question">What can I do?</h1>
+            <div class="frame">
+                <img src="images/Picture4.png">
+                <div>
+                    I am Vietnamese native and<br> 
+                    I can speak Japanese and English
+                </div>               
+            </div>
+
+            <div class="frame">
+                <img src="images/Picture5.png">
+                <div>
+                    I’m on my way to become a web developer
+                </div>                   
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1 id="text2">I can help</h1>
+            If you need my help with something, just fancy say hey and then get in touch
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1003418.9814024012!2d106.12309987613888!3d10.764864292662647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eefdb25d923%3A0x4bcf54ddca2b7214!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1586351516700!5m2!1sen!2s" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </body>
+</html>
