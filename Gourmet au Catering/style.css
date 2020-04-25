@@ -1,0 +1,283 @@
+/*---------------------BASIC SETUP--------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    font-weight: 300;
+}
+
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*---------------------NAVIGATION BAR--------------------*/
+
+nav {
+    width: 100vw;
+    height: 8vh;    
+    position: fixed;
+    background-color: #fff;
+}
+
+nav h3 {
+    float: left;
+    height: 100%;    
+    letter-spacing: 2px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;     
+    display: flex;
+    padding-top: 12px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: block;
+    width: 130px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: left;
+    color: #555;
+    transition: text-decoration 0.5s, text-spacing 0.5s;
+
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    text-decoration: underline;
+    letter-spacing: 1px;    
+}
+
+/* HIDE THE MENU */
+
+nav li ul {    
+    display: none;
+    padding: 0;
+    position: adsolute;
+}
+
+nav li ul li {
+    padding-top: 10px;
+}
+
+/* DISPLAY THE MENU */
+
+li:hover > ul {
+    display: block;
+}
+
+
+/*---------------------HEADER--------------------*/
+
+header {
+    background-image: url("img/hamburger.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 110vh;
+}
+
+header h1 {
+    color: rgba(36, 32, 32, 0.79);
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 300%;
+    position: relative;
+    top: 90%;
+    left: 50px;
+}
+
+/*---------------------ABOUT SECTION--------------------*/
+
+
+#about-section {
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-section figure {
+    flex: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+#about-section figure img {
+    width: 90%;
+    height: 100%;
+    margin: auto 0;
+    
+}
+
+#side-content {
+    flex: 50%;
+    width: 90%;
+    margin: auto 0;
+}
+
+#side-content h1 {
+    font-size: 300%;
+    text-align: center;
+}
+
+#side-content h3 {
+    font-size: 130%;
+    letter-spacing: 1px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#side-content p {
+    padding-bottom: 30px;
+    line-height: 150%;
+    font-size: 110%;
+    text-align: justify;    
+}
+
+#side-content p::first-letter {
+    font-size: 180%;
+}
+
+
+#grey-text {
+    color: rgba(85, 85, 85, 0.74);
+}
+
+/*--------------------- MENU SECTION--------------------*/
+
+#menu-section {
+    margin-top: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;    
+}
+
+#menu-section div {
+    flex: 50%;
+    margin: auto;
+}
+
+#menu-section h1 {
+    font-size: 300%;
+    text-align: center;
+}
+
+#menu-section h3 {
+    font-size: 120%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+#menu-section p {
+    font-size: 90%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgba(85, 85, 85, 0.74);
+    padding-right: 50px;
+
+}
+
+#menu-section figure {
+    flex: 50%;
+}
+
+#menu-section figure img {
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+    opacity: 70%;
+}
+
+/*---------------------CONTACT SECTION--------------------*/
+
+#contact-section {
+    margin-top: 100px;
+    height: 85vh;
+}
+
+#contact-section h1 {
+    font-size: 300%;
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+}
+
+#contact-section p {
+    font-size: 100%;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+#contact-section h3 {
+    font-size: 120%;
+    color: rgba(5, 61, 90, 0.75);
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+}
+
+#contact-section input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    color: rgba(85, 85, 85, 0.74);
+    padding: 10px;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 90%;
+}
+
+#contact-section input:active {
+    border: 3px solid rgba(5, 61, 90, 0.75); 
+}
+
+/*---------------------FOOTER SECTION--------------------*/
+
+footer {
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(183, 174, 174, 0.4);
+}
+
+footer p {
+    padding-top: 40px;
+    padding-right: 40px;
+    text-align: right;
+    font-size: 90%;
+    letter-spacing: 2px;
+    
+}
+
+
+
+
+
+
+
+
+
