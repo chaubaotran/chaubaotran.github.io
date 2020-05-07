@@ -156,12 +156,7 @@
     
     
     /*---HEADER---*/
-    
-    header .carousel-item img {
-        width: 100%;
-        height: 90vh;
-    }
-    
+        
     header .carousel-caption {
     position: absolute;
     padding: 0;
@@ -176,9 +171,9 @@
     }
 
     header .carousel-caption h5 {
-        font-size: 500%;
+        font-size: 400%;
         font-weight: 700;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
     }
 
     header .carousel-caption p {
@@ -215,26 +210,30 @@ header {
 }
 
 header .carousel-item img {
-    width: 100%;
-    height: 90vh;
+    animation-name: example;
+    animation-duration: 10s;
+} 
+
+@keyframes example {
+    from {transform: scale(1.07);}
+    to {transform: scale(1);}
 }
 
 .carousel-indicators {
     margin: 0;
-    left: 90%;
+    left: 95%;
     top: 90%;
 }
     
 .carousel-indicators li {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;       
     background-color: #a0a0a0;
 }
     
 .carousel-indicators .active {
     background-color: #fff;
-
 }
 
 
