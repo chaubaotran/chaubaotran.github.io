@@ -102,86 +102,56 @@ header .btn:hover {
 
 /*----------EDUCATION----------*/
 
-#education .circle {
-    padding: 5px 10px;
-    border-radius: 50%;
-    background-color: #ff7700;
-    color: #fff;
-    max-height: 50px;
-    z-index: 2;
+#education ul.timeline a {
+    color: #000;
+    padding-bottom: 0.2em;
+    font-size: 150%;
 }
 
-#education .how-it-works.row .col-2 {
-    align-self: stretch;
+#education ul.timeline a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #ff7700;
 }
 
-#education .how-it-works.row .col-2::after {
-    content: "";
+#education ul.timeline p {
+    color: #000;
+    font-size: 100%;
+}
+
+#education ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+#education ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
     position: absolute;
-    border-left: 3px solid #000;
-    z-index: 1;
-}
-
-#education .how-it-works.row .col-2.bottom::after {
-    height: 50%;
-    left: 50%;
-    top: 50%;
-}
-
-#education .how-it-works.row .col-2.full::after {
+    left: 29px;
+    width: 2px;
     height: 100%;
-    left: calc(50% - 3px);
+    z-index: 400;
 }
 
-#education .how-it-works.row .col-2.top::after {
-    height: 50%;
-    left: 50%;
-    top: 0;
+#education ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
 }
 
-#education .timeline div {
-    padding: 0;
-    height: 40px;
+#education ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #ff7700;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
 }
 
-#education .timeline hr {
-    border-top: 3px solid #000;
-    margin: 0;
-    top: 17px;
-    position: relative;
-}
-
-#education .timeline .col-2 {
-    display: flex;
-    overflow: hidden;
-}
-
-#education .timeline .corner {
-    border: 3px solid #000;
-    width: 100%;
-    position: relative;
-    border-radius: 15px;
-}
-
-#education .timeline .top-right {
-    left: 50%;
-    top: -50%;
-}
-
-#education .timeline .left-bottom {
-    left: -50%;
-    top: calc(50% - 3px);
-}
-
-#education .timeline .top-left {
-    left: -50%;
-    top: -50%;
-}
-
-#education .timeline .right-bottom {
-    left: 50%;
-    top: calc(50% - 3px);
-}
 
 /*----------SKILLS----------*/
 
@@ -269,20 +239,21 @@ header .btn:hover {
 }
 
 
-/*FOOTER*/
+/*----------FOOTER----------*/
 
 #footer {
-    padding:2rem 0;
+    padding: 2rem 0;
     background-color: #484848;
-    color:white;
+    color: #fff;
 }
 
 #footer a {
-    color: white;
+    color: #fff;
 }
 
-#footer .fa {
-    padding:0 5px;
+#footer .fab, 
+#footer .fas {
+    padding: 5px;
 }
 
 
@@ -304,10 +275,6 @@ header .btn:hover {
     @keyframes scale {
         from {transform: scale(1);}
         to {transform: scale(1.2);}
-    }
-    
-    #education .circle {
-        padding: 13px 20px;
     }
 
 }
