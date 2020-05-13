@@ -1,0 +1,131 @@
+/* 
+red: #e2231a
+*/
+
+/*-------BASIC SETUP--------*/
+
+* {
+    font-size: 16px;
+    font-weight: 300;
+    transition: all 0.5s;
+}
+
+h2 {
+    color: #e2231a;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+        
+    #card-left {
+        border-radius: 50px 0 0 0; 
+        float: right;
+        width: 70%;
+    }
+
+    #card-right {
+        width: 70%;
+        border-radius: 0 0 50px 0; 
+    }
+    
+    .banner-row {
+        width: 100%;
+        margin: 0;
+        margin-top: 8%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    
+}
+
+/*-------NAVIGATION BAR--------*/
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-item .nav-link:link,
+.navbar-nav .nav-item .nav-link:visited {
+    color: #e2231a;
+    font-size: 90%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 15px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:active {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.form-inline {
+    margin-left: auto;
+}
+
+
+/*-------BANNER--------*/
+
+.banner-text {
+    margin-left: 5%;
+}
+
+.banner-text h3,
+.banner-text h2 {
+    color: #e2231a;
+}
+
+.banner-text h3 {
+    font-size: 150%;
+}
+
+.banner-text h2 {
+    font-size: 250%;
+}
+
+.carousel-inner {
+    height: 416px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%; 
+    background-color: grey;
+}
+
+.carousel-indicators .active{
+    background-color: #e2231a;
+}
+
+.carousel-indicators {
+    position: static;
+}
+
+/*-------OTHER--------*/
+
+.card {
+    overflow: hidden;
+}
+
+
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    transform: scale(1.05);
+}
+
+.card-img-top:hover {
+    transform: scale(1.15);
+}
+
+.card-body {
+    background-color: #e2231a; 
+}

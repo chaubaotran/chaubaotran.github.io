@@ -1,0 +1,621 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/*--------------NAVBAR---------------*/
+
+.sub-menu {
+    display: none;
+}
+
+.right-navbar {
+    margin-left: 0;
+}
+
+.right-link ion-icon {
+    display: none;
+}
+
+.right-link p {
+    margin: 0;
+}
+/*--------------HEADER---------------*/
+
+header {
+    margin-top: 50px;    
+}
+
+header .carousel-item img {
+    animation-name: img-scale;
+    animation-duration: 5s;
+} 
+
+@keyframes img-scale {
+    from {transform: scale(1.05);}
+    to {transform: scale(1);}
+}
+
+.carousel-indicators {
+    margin: 0;
+    left: 90%;
+    top: 90%;
+}
+    
+.carousel-indicators li {
+    width: 4%;
+    height: 8%;
+    border-radius: 50%;       
+    background-color: #a0a0a0;
+}
+    
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+/*--------------ITEMS SHOWCASE---------------*/
+
+.item-showcase {
+    margin-top: 5%;
+}
+
+
+.item-showcase .nav {
+    margin-bottom: 10%;
+}
+
+.item-showcase .nav .nav-link {
+    color: #585151; 
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+}
+
+.item-showcase .nav .nav-link:hover {
+    color: #000;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.item-showcase .nav .active {
+    text-decoration: underline;
+}
+
+/*--------------CHECK BOX LIST---------------*/
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #585151; 
+    font-size: 80%;
+}
+
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+color: #000;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*--------------ITEM LIST---------------*/
+
+.item-showcase .item {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-showcase .item-img {
+    position: relative;
+}
+
+.item-showcase .item-img img {
+    width: 100%;
+}
+
+.item-showcase .item-img .text-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 30%;
+    top: 70%;
+    left: 0%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s linear ;
+}
+
+.item-showcase .text-overlay h5 {
+    margin: 0;
+    margin-top: 5%;
+}
+
+.item-showcase .text-overlay a {
+    color: #fff;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item-showcase .text-overlay a:hover {
+    text-decoration: underline;
+}
+
+.item-showcase .item-img:hover .text-overlay {
+    opacity: 1;
+}
+
+.item-showcase .item-explain {
+    margin-top: 10px;
+}
+
+.item-showcase .item-explain a:link, 
+.item-showcase .item-explain a:visited {
+    float: left;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+.item-showcase .item-explain a:hover, 
+.item-showcase .item-explain a:active {
+    text-decoration: underline;
+}
+
+.item-showcase .item-explain .item-icon {
+    float:right;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-showcase .item-explain ion-icon {
+    font-size: 20px;
+}
+
+.item-showcase .item-explain ion-icon:hover {
+    color: indianred;
+}
+
+.item-showcase .item-explain p {
+    clear: both;
+    margin: 0;
+    font-size: 12px;
+}
+
+.item-showcase .item-explain .old-price {
+    text-decoration: line-through;
+}
+
+.item-showcase .item-explain .new-price {
+    text-decoration: none;
+    font-size: 14px;
+    color: red;
+}
+
+/*--------------ITEM ORDER---------------*/
+
+.item-order {
+    margin-top: 70px;
+}
+
+
+.item-order .sub-img {
+    display: none;
+}
+
+.item-order img {
+    width: 100%;
+}
+
+.item-order span {
+    font-size: 50%;
+}
+
+.item-order .big-text {
+    font-size: 70%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: underline;
+
+}
+
+.item-order .item-code {
+    font-size: 50%;
+    color: #585151;
+}
+
+.item-order .old-price {
+    text-decoration: line-through;
+}
+
+.item-order .new-price {
+    color: red;
+}
+
+.item-order select {
+    font-size: 50%;
+    width: 75%;
+    border: 1px solid #000;
+}
+
+ 
+.item-order option {
+    font-size: inherit;
+}
+
+.item-order select:focus  {
+    box-shadow: none;
+
+}
+
+.item-order button {
+    font-size: 50%;
+    font-weight: 300;
+    border-radius: 0;
+    padding: 2px;
+    margin-top: 5px;
+    width: 75%;
+}
+
+.item-order .back-arrow {
+    margin-top: 2%;
+}
+
+.item-order .back-arrow a {
+    color: #585151; 
+    text-decoration: none;
+}
+
+
+
+
+/*--------------FOOTER---------------*/
+
+footer {
+    margin-top: 5%;
+    background-color: rgb(51, 49, 49);
+    color: white;
+}
+
+footer .nav-link:link,
+footer .nav-link:visited {
+    font-size: 50%;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 8px;
+}
+
+footer .text-nav .nav-link:hover,
+footer .text-nav .nav-link:active {
+    border-bottom: 2px solid #fff;
+}
+
+footer .fab {
+    font-size: 100%;
+    padding: 0;
+}
+
+footer .fa-facebook:hover {
+    color: #3b5999;
+}
+footer .fa-instagram:hover {
+    color: #bc2a8d;
+}
+footer .fa-twitter:hover {
+    color: #4768ad;
+}
+footer .fa-pinterest-p:hover {
+    color: #bd081c;
+}
+
+footer .fa-youtube:hover {
+    color: #c4302b;
+}
+
+footer p {
+    font-size: 50%;
+    padding-top: 8px;
+}
+
+footer p a:link,
+footer p a:active {
+    font-size: inherit;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    /*---MAIN MENU---*/
+    
+    .navbar-nav > .nav-item {
+        margin-left: 5%;
+    }
+    
+    .right-navbar .nav-item {
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    
+    .right-link {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .right-link p {
+        font-size: 70%;
+        text-align: center;
+    }
+    
+    .right-link ion-icon {
+        display: inline-block;
+        opacity: 1;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
+    
+    /*---SUB MENU---*/
+    
+    .sub-menu {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #6f6767;
+        opacity: 0;
+        transition: opacity 0.5s;  
+    }
+    #new-sub-menu .nav {
+        justify-content: center;
+    }
+    
+    #new-sub-menu .nav .nav-item {
+        width: 23%;
+    }
+    
+    #new-sub-menu .nav .nav-item .card  {
+        color: #585151;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    
+    #new-sub-menu .card .card-img-top {
+        width: 100%;
+        height: 80%;
+    }
+    
+    .img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background-color: rgba(0,0,0,0.3);
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    
+    #new-sub-menu .card:hover .img-overlay {
+        opacity: 1;       
+    }
+    
+    #new-sub-menu .mother-day-card {
+        background-color: #393939;
+    }
+    
+    #new-sub-menu .mother-day-card p:first-child {
+        margin-top: 25%;
+    }
+    
+    #new-sub-menu .mother-day-text {
+        font-size: 250%;
+        letter-spacing: 1px;
+    }
+    
+    #new-link:hover #new-sub-menu {
+        display: block;
+        opacity: 1;
+    }
+    
+    #women-sub-menu .nav {
+        justify-content: flex-start;
+    }    
+    
+    #women-sub-menu .sub-menu-column{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 5%;
+    }
+    
+    #women-sub-menu .sub-menu-column:first-child {
+        margin-left: 10%;
+    }
+    
+    #women-sub-menu .sub-menu-column  .nav-link {
+        padding: 0;
+        margin: 0;
+        font-size: 80%;
+    }
+    
+    #women-link:hover #women-sub-menu {
+        display: block;
+        opacity: 1;
+    }
+    
+    .nav-img {
+        width: 25%;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: relative;
+    }
+    
+    .nav-img-overlay {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    
+    .nav-img:hover .nav-img-overlay {
+        opacity: 1;
+    }
+    
+    #men-link:hover #women-sub-menu {
+        display: block;
+        opacity: 1;
+    }
+        
+    /*---HEADER---*/
+        
+    header .carousel-caption {
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 100%;
+    color: white;
+    }
+
+    header .carousel-caption h5 {
+        font-size: 400%;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    header .carousel-caption p {
+        font-size: 100%;
+        letter-spacing: 3px;
+    }
+    
+    .item-order span {
+        font-size: 100%;
+    }
+    
+    .item-order .item-code {
+        font-size: 100%;
+    }
+    
+    .item-order .big-text {
+        font-size: 150%;
+    }
+    
+    .item-order select {
+        font-size: 100%;
+        --width: 300px;
+    }
+    
+    .item-order button {
+        font-size: 100%;
+        padding: 4px;
+        --width: 300px;
+    }    
+    
+    .item-order .back-arrow .fas {
+        font-size: 200%;
+    }
+    
+    footer .nav-link:link,
+    footer .nav-link:visited {
+        font-size: 80%;
+        text-decoration: none;
+        padding: 8px 16px;
+    }
+
+    footer p {
+        font-size: 80%;
+    }
+    
+    footer .nav {
+    margin-top: 10px;
+}
+    footer .fab {
+        font-size: 150%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .item-order .sub-img {
+    display: block;
+}
+    
+    .item-order .back-arrow ion-icon {
+        font-size: 250%;
+    }
+}
+
+
+
+
+
+
+
+
